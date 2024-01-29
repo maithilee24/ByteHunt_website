@@ -11,26 +11,28 @@ const Profile = () => {
       />
 
       {/* Profile Card */}
-      <div className="flex max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-lg z-10">
+      <div className="flex w-1/2 h-1/2 mx-auto bg-white rounded-lg overflow-hidden shadow-lg z-10  ">
         {/* Circular Profile Image */}
-        <div className="flex-shrink-0 p-4">
+        <div className="flex-shrink-0 p-8">
           <img
-            src="/bg.png" // Replace with your actual image source
+            src="/profile.jpeg" // Replace with your actual image source
             alt="Profile"
-            className="w-20 h-20 rounded-full"
+            className="w-48 h-48  rounded-full"
           />
         </div>
 
         {/* User Information */}
-        <div className="flex-grow px-8 py-6 text-left">
-          <div className="font-bold text-3xl mb-4">Devendra Singh</div>
-          <div className="text-gray-700 text-lg mb-2 font-semibold">
+        <div className="flex-grow  px-16 py-16 text-left">
+          <div className="font-bold text-[#043F5D] text-3xl mb-4  underline ">
+            Devendra Singh
+          </div>
+          <div className=" text-[#043F5D] text-2xl mb-2 font-semibold">
             Branch: CSE
           </div>
-          <div className="text-gray-700 text-lg mb-2 font-semibold">
+          <div className="text-[#043F5D] text-2xl mb-2 font-semibold">
             Batch: 2026
           </div>
-          <div className="text-gray-700 text-lg font-semibold">
+          <div className="text-[#043F5D] text-lg  font-semibold">
             Email: devsa2067@gmail.com
           </div>
         </div>
