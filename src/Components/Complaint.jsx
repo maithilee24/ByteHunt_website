@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 const Complaint = () => {
     return (
         <div className="mx-10">
-            <div className="text-cyan-800 text-4xl my-5">Complaint</div>
+            <div className="text-cyan-800 text-4xl my-5 font-semibold">Complaint Form</div>
             <form>
                 <div className="flex flex-col gap-4">
                     <div className="flex gap-10 items-center">
@@ -33,7 +33,7 @@ const Complaint = () => {
                             />
                         </div>
                         <div className="flex gap-10 items-center justify-center mt-10  ">
-                        <Button type="submit" variant="contained" color="primary">
+                        <Button type="submit" variant="contained"  className='w-56 h-12' style={{ backgroundColor:"#043F5D",  }}>
                             Submit
                         </Button>
                     </div>
