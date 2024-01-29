@@ -1,4 +1,4 @@
- // Assuming you have your custom styles in App.css
+// Assuming you have your custom styles in App.css
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
@@ -26,7 +26,7 @@ function SignUp() {
       <div className="flex justify-center items-center min-h-screen">
         <div className="w-96">
           <form
-            onSubmit={handleSubmit}
+            onSubmit={() => navigate("/home")}
             className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
           >
             <h2 className="mb-3 text-2xl font-bold">Sign Up</h2>
