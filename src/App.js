@@ -4,6 +4,7 @@ import SignUp from "./Components/SignUp";
 import Home from "./Components/Home";
 import Profile from "./Components/Profile";
 import Complaint from "./Components/Complaint";
+import AllComplaints from "./Components/AllComplaints";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/complaint" element={<Complaint />}></Route>
+        <Route path="/allcomplaints" element={<AllComplaints />}></Route>
         <Route path="/" element={<Home />}></Route>
       </Routes>
     </Router>
