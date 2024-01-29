@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScrollDown = () => {
+    const scrollAmount = 100;
+
+    const container = document.getElementById("scrollContainer");
+
+    if (container) {
+      const newScrollPosition = scrollPosition + scrollAmount;
+      container.scrollTop = newScrollPosition;
+      setScrollPosition(newScrollPosition);
+    }
+  };
   return (
     <main className="">
       <h1 className="px-20 text-[5rem]  text-white font-semibold py-20">
@@ -17,7 +30,10 @@ const Dashboard = () => {
       ></img>
       <div className="flex flex-row justify-between px-40">
         <Link to="/profile">
-          <div className="h-72 w-72 bg-[#ECF4F7] flex flex-col justify-center shadow-2xl">
+          <div
+            className="h-72 w-72 bg-[#ECF4F7] flex flex-col justify-center shadow-2xl"
+            nClick={handleScrollDown}
+          >
             <img
               alt="icon"
               src="/gg_profile.png"
